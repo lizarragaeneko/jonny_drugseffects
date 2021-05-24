@@ -1,0 +1,180 @@
+#analgesicos-bg{
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow  5s ease infinite;
+-o-animation: rainbow 5s ease infinite;
+  animation: rainbow  5s ease infinite;
+    position:absolute;
+    
+    opacity:0.45;
+      min-width:100%;
+  min-height:100%;
+top:0;
+    
+    left:0;
+   
+   
+}
+ 
+#imagen-mario1{
+ animation: mover 7.5s infinite;   
+}
+#imagen-mario2{
+ animation: mover 8.5s infinite;
+    left:25%;
+    position:fixed;
+}
+#imagen-mario3{
+ animation: mover 10.5s infinite;
+    left: 50%;
+    position:fixed;
+}
+#imagen-mario4{
+    animation:mover 5.5s infinite;
+    position:fixed;
+    left:75%;
+    
+}
+#imagen-mario5{
+ position:fixed;
+    right:10;
+    animation:mover 4.5s infinite;
+}
+body{
+ overflow:hidden; 
+    background-color:transparent;
+   
+ 
+}
+#pantallacompletablur{
+ min-height:100%;
+    min-width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+backdrop-filter: blur(5px);
+    animation: blur 1s infinite, blur2 2s infinite alternate;
+}
+#analgesicos-yoshi #analgesicos-yoshi-img1{
+filter: blur(0px);
+    opacity: 0.5;
+    animation: mover2 10s infinite;
+    
+}
+#analgesicos-yoshi #analgesicos-yoshi-img2{
+filter: blur(0px);
+    opacity: 0.5;
+    animation: mover2 12.5s infinite;
+    top: 50%;
+    position:absolute;
+    
+}
+#analgesicos-yoshi #analgesicos-yoshi-img3{
+filter: blur(0px);
+    opacity: 0.5;
+    animation: mover 12.5s infinite;
+    left: 275%;
+    top: 75%;
+    position:absolute;
+    
+}
+#analgesicos-yoshi{
+ position:absolute;   
+}
+#imagenes-animaciones img{
+ filter:blur(4px);  
+ 
+}
+#klaene-analgesicos-script{
+}
+/*#imagenes-animaciones img{
+filter:blur(4px);
+}*/
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(20000px); }
+    100% { transform: translateY(-1000px);right:0; }
+}
+@keyframes mover {
+    0% { transform: translateY(20000px); }
+    100% { transform: translateY(-1000px); }
+}
+@-webkit-keyframes mover2 {
+    0% { transform: translateX(20000px); }
+    100% { transform: translateX(-1000px);right:0; }
+}
+@keyframes mover2 {
+    0% { transform: translateX(20000px); }
+    100% { transform: translateX(-1000px); }
+}
+@keyframes grande{
+ 0%{
+     bottom:-100%;position:fixed;
+    }
+    25%{
+     
+        position:fixed;
+        bottom: 75%;
+        
+    }
+    50%{
+    
+        position:fixed;
+        bottom: 50%;
+    }
+    75%{
+   
+        position:fixed;
+        top: 25%;
+    }
+    100%{
+        
+      
+        position:fixed;
+        top: 10%;
+    }
+}
+@keyframes blur {
+  0%,
+  90% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+  }
+  50% {
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    -ms-filter: blur(50px);
+  }
+}
+@keyframes blur2 {
+  0% { -webkit-filter: blur(0px); }
+  50% { -webkit-filter: blur(5px); }
+  100% { -webkit-filter: blur(0px); }
+}
+audio{
+   display:none; 
+}
